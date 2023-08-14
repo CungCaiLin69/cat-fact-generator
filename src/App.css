@@ -1,38 +1,60 @@
+@import url('https://fonts.cdnfonts.com/css/f-funny-cat');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'f Funny Cat', sans-serif;
+  background-color: #C8EFF4;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fact-box{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fact-text{
+  max-width: 75%;
+  font-size: 30px;
+  margin-top: 150px;
+  color: #022999;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fact-btn{
+  display: block;
+  width: 250px;
+  margin: 50px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: 6px 6px #F27D42;
+}
+
+.fact-btn:active{
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px #F27D42;
+}
+
+.cat1, .cat2, .cat3{
+  position: absolute;
+}
+
+.cat1{
+  width: 250px;
+  right: 0;
+  bottom: 0;
+}
+.cat2{
+  width: 400px;
+  left: 0;
+  bottom: 0;
+}
+.cat3{
+  width: 150px;
+  transform: rotate(180deg);
 }
